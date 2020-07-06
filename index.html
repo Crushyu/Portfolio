@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <!-- Bootstrap官方網站 https://getbootstrap.com/ -->
+    <!-- 連結Bootstrap.min.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- TODO: 客製化Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    
+    <!--wow.js-->
+ 
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+/>
+
+
+    <!-- 使用style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- main js-->
+    <link rel="stylesheet" href="./js/main.js">
+    
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- 使用Boostrap Navbar -->
+    <!-- TODO: 設定Navbar緊貼畫面上緣 -->
+    <!-- TODO: 點擊滾動目標 -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#">Wu Yuqin</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Design workSection">Design work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ExperienceSection">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About meSection">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallerySection">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header -->
+    <header id="header" class="jumbotron text-center text-white bg-dark">
+        <div class="container">
+            <h1 class="animate__animated animate__bounce">Welcome to my personal portfolio website</h1>
+            <p>I will introduce my experience related to design</p>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- introSection -->
+    <!-- TODO: 設定introSection 上下padding為5倍 -->
+    <section id="Design workSection">
+        <h1 class="section-title text-center text-secondary mt-4">Design work</h1>
+        <div class="container">
+            <!-- TODO: 修正排版為三項排一排 -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-paper-plane fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">PRODUCT</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>Can look at the products I designed.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-mobile fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">UI</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>You can look at the APP I designed</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-gamepad fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">MODELING</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>You can look at the 3d model I designed</p>
+                    </div>
+                </div>
+            </div>
+            <!-- TODO: 設定此區塊距離上方5倍margin -->
+            <!-- TODO: 修正排版在md時六個排一排 sm三個排一排 sm以下兩個排一排-->
+
+            </div>
+        </div>
+    </section>
+    <!-- introSection end -->
+    <!-- featuresSection -->
+    <section id="ExperienceSection" class="py-5 bg-secondary text-white">
+        <div class="container">
+            <h1 class="section-title mb-5 text-center">Experience</h1>
+            <!-- TODO: 設定row內的區塊置中對齊 -->
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-8">
+                    <!-- TODO: 為article1 article2 設置collapse互動方式 -->
+                    <button class="btn btn-primary" data-target="#article1" data-toggle="collapse">Experience</button>
+                    <button class="btn btn-primary" data-target="#article2" data-toggle="collapse">Certificate</button>
+                    <article class="my-3" id="article1">
+                        <h3>Experience</h3>
+                        <p>Assist the unit to arrange the venue. China (Jinjiang) International Home Improvement Building Materials Expo Venue Assistant Oriental Design Star Exchange Conference Venue Assistant 2019</p>
+                    </article>
+                    <article class="my-3" id="article2">
+                        <h3>Certificate</h3>
+                        <p>CS5 International License Adobe Photpshop 
+                                       CS5 International License Adobe Illustrator</p>
+                    </article>
+                    <!-- 導覽按鈕 -->
+                    <nav class="nav nav-pills justify-content-center">
+                        <a class="nav-link active" data-target="#article3" data-toggle="tab"
+                            href="#article3">Software</a>
+                        <a class="nav-link" data-target="#article4" data-toggle="tab"
+                            href="#article4">Introduction</a>
+                    </nav>
+                    <!-- TODO: 為article3 article4 設置tab互動方式 -->
+                    <div class="tab-content">
+                        <article id="article3" class="tab-pane active my-3">
+                            <h3>Software</h3>
+                            <p>Adobe Photpshop                    Adobe Illustrator                Adobe  Premiere     
+
+                            </p>
+                        </article>
+                        <article id="article4" class="tab-pane my-3">
+                            <h3>Introduction</h3>
+                            <p>
+                                From xiamen                                             
+                                Phone: 0906380758                                           
+                                Email: 4a670915@stust.edu.tw                                             
+                                Education: Department of Product Innovation Design, Nantai University of Science and Technology
+                                
+                        </article>
+                    </div>
+                    <!-- TODO: 崁入一個youtube影片 https://www.youtube.com/watch?v=gwDoRPcPxtc -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YJKgUiPOJJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featuresSection end --> 
+    <!-- reviewsSection --> 
+    <section id="About meSection" class="carousel slide py-5 bg-white"  data-ride="carousel" >
+        <!-- TODO: 使用輪播(Carousel)元件放入以下兩頁內容 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+        <!-- 第一頁 內容 -->
+        <div class="row justify-content-center py-5">
+            <div class="col-sm-2">
+                <!-- 設定使用者照片變圓型 -->
+                <img class="w-100 rounded-circle" src="./img2/1.png" alt="user photo">
+            </div>
+            <div class="col-sm-6">
+                <h3 class="title">Interior design student</h3>
+                <h4 class="name">Wu Yuqin</h4>
+                <p>I used to be a student in the interior design department and studied at Oriental Design University for two years. I learned AutoCAD and different interior decoration materials. Let me better understand the sense of space and design. I benefited a lot, and later I found that I was more interested in product design, so I came here.</p>
+            </div>
+        </div>
+        <!-- 第一頁 內容 結束 -->
+    </div>
+
+    <div class="carousel-item">
+        <!-- 第二頁 內容 -->
+        <div class="row justify-content-center py-5">
+            <div class="col-sm-2">
+                <!-- 設定使用者照片變圓型 -->
+                <img class="w-100 rounded-circle" src="./img2/2.png" alt="user photo">
+            </div>
+            <div class="col-sm-6">
+                <h3 class="title">Student of Product Innovation Design</h3>
+                <h4 class="name">Wu Yuqin</h4>
+                <p>Has strong hand-drawing ability and color matching ability
+                    Understand, good at product design, I am a junior student
+                    Possess professional product design background, with both interactive and interface design capabilities. Own innovation
+                    Vision and familiarity with design-related software. Ability to work independently, also good at group
+                    Team cooperation.</p>
+            </div>
+        </div>
+        <!-- 第二頁 內容 結束 -->
+</div>
+
+    </div>
+
+    <a class="carousel-control-prev" href="#reviewsSection" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#reviewsSection" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </section>
+    <!-- reviewsSection end -->
+    <!-- modalSection弹出视窗 -->
+    <section id="modalSection" class="bg-secondary py-5">
+        <div class="row justify-content-center my-5">
+            <div class="col-md-3">
+                <h4 class="text-center text-white mb-4">
+                    Have work cooperation</h4>
+                <!-- TODO: 設定點擊按鈕後顯示彈出式視窗 -->
+                <button class="btn btn-lg btn-block btn-primary"  data-toggle="modal" data-target="#exampleModal" >Leave your contact information</button>
+                  <!-- TODO: 加入彈出式視窗 Modal -->
+                    
+                  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">聯絡資訊</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label for="InputName">姓名</label>
+            <input type="name" class="form-control mb-4" id="name" placeholder="請輸入姓名">
+            <label for="InputEmail">信箱</label>
+            <input type="email" class="form-control" id="email" placeholder="請輸入信箱">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" >儲存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+           
+                  
+            </div>
+        </div>
+    </section>
+    <!-- modalSection end -->+
+    <!-- gallerySection -->
+    <section id="gallerySection">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="galleryImage1" class="col-md-3 col-sm-6">
+                    <div class="gallery-text" >And a sheep</div>
+                    <a href="http://wufazhuce.com/article/4181" class="button">
+                         <i class="fas fa-book-reader">
+                        </i> Go</a>
+                </div>
+                <div id="galleryImage2" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Plant Thermometer</div>
+                </div>
+                <div id="galleryImage3" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Board games </div>
+                </div>
+                <div id="galleryImage4" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Capsule coffee machine</div>
+                </div>
+                <div id="galleryImage5" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Fitness Alliance</div>
+                </div>
+                <div id="galleryImage6" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Convenient Grill</div>
+                </div>
+                <div id="galleryImage7" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Design photography</div>
+                </div>
+                <div id="galleryImage8" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Bluetooth  door locks</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallerySection end -->
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="footer-list col-lg-3 col-md-3">
+                    <h4 class="section-title text-center text-primary mt-4">Contact Us</h4>
+                    <a class="section-title text-center text-dark mt-4"
+                       href="4a670915@stust.edu.tw ">4a670915@stust.edu.tw</a>
+                </div>
+                <div class="footer-list col-lg-3 col-md-3">
+                    <h5 class="text-uppercase section-title text-center text-primary mt-4">Company</h5>
+                    <ul>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">Press</a>
+                        </li>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">Bonus</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-list col-lg-3 col-md-3">
+                    <h5 class="text-uppercase section-title text-center text-primary mt-4">Product</h5>
+                    <ul>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">Enterprice</a>
+                        </li>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-list col-lg-3 col-md-3">
+                    <h5 class="text-uppercase section-title text-center text-primary mt-4">Resource</h5>
+                    <ul>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">Guilde</a>
+                        </li>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">API</a>
+                        </li>
+                        <li>
+                            <a class="section-title text-center text-dark mt-4" href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end bg-dark">
+            <p class="text-center text-white">&copy; Copy right 2020 Wu,Yu—qin</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- ad-box -->
+    <div class="ad-box">
+        <div class="left-part">
+            <button class="ad-toggle-btn">
+                <i class="fas fa-sort"></i>
+            </button>
+        </div>
+        <div class="right-part">
+            <img class="w-100" src="./img2/3.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam ullam excepturi facilis aperiam.
+                Maiores mollitia nihil vitae ullam dolore?</p>
+        </div>
+    </div>
+    <!-- ad-box end -->
+    <!-- TODO: 設定置底返回按鈕 返回按鈕滾動動畫 -->
+    <button id="goBackBtn" class="bg-primary" href="#header">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
